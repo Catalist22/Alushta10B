@@ -333,7 +333,7 @@
         font-family: 'Tinos', serif;
         font-size: 54px;
         padding-top: 98px;
-        color: rgba(212, 88, 16, 0.952);
+        color: rgba(199, 8, 40, 0.952);
         text-align: center;
         padding-bottom: 138px;
     }
@@ -572,7 +572,8 @@
         }
         .right-button {
             margin-top: 30px;
-            margin-right: 300px;
+            margin-right: 0px;
+            margin-left: 300px;
         }
         .history-images {
             display: none;
@@ -582,6 +583,12 @@
         .history-number {
             width: auto;
             margin-left: 10px;
+        }
+        .container {
+            margin: auto 40px;
+        }
+        .black-block {
+            margin-left: 0px;
         }
     }
     

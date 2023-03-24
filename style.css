@@ -590,6 +590,9 @@
         .black-block {
             margin-left: 0px;
         }
+        .menu {
+            background-size: auto;
+        }
     }
     
     @media (max-width: 1185px) {

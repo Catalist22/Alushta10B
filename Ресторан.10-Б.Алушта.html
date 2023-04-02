@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+
+    <!-- Анимация -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <title>Ресторан 10-Б Алушта</title>
 </head>
 
@@ -90,59 +92,59 @@
 
     </div>
     <div class="cards">
-        <div class="container">
+      
             <div class="cards-holder">
-                <div class="card">
 
-                    <div class="card-image">
-                        <img class="card-img" src="card.png">
-                    </div>
-                    <div class="card-title">
-                        Магическая Атмосфера
-                    </div>
-                    <div class="card-desc">
-
-                        В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-
-                    <div class="card-image">
-                        <img class="card-img" src="card.png">
-                    </div>
-                    <div class="card-title">
-                        Лучшее качество Еды
-                    </div>
-                    <div class="card-desc">
-
-                        Качество нашей Еды - отменное!
-
-
+                    <div class="card wow fadeInLeft" data-wow-duration="2s">
+                        <div class="front side">
+                            <img class="card-img" src="magic-wand.png">
+                            <p class="card-title">
+                                Магическая Атмосфера
+                            </p>
+                        </div >
+                        <div class="back side">
+                            <p class="card-desc">
+                                В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
+                               
+                            </p>
+                            <hr class="line">
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="card">
-
-                    <div class="card-image">
-                        <img class="card-img" src="card.png">
+                    <div class="card wow fadeIn" data-wow-duration="2s">
+                        <div class="front  side">
+                            <img class="card-img" src="card.png">
+                            <p class="card-title">
+                                Лучшее качество Еды
+                            </p>
+                        </div >
+                        <div class="back side">
+                            <p class="card-desc">
+                                Качество нашей Еды - отменное!
+                            </p>
+                            <hr class="line">
+                        </div>
                     </div>
-                    <div class="card-title">
-                        Недорогая Еда
+
+                    <div class="card wow fadeInRight" data-wow-duration="2s">
+                        <div class="front  side">
+                            <img class="card-img" src="money-bag.png">
+                            <p class="card-title">
+                                Недорогая Еда
+                            </p>
+                        
+                        </div >
+                        <div class="back  side">
+                            <p class="card-desc">
+                                Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!
+                            </p>
+                            <hr class="line">
+                        </div>
                     </div>
-                    <div class="card-desc">
 
-                        Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!
-
-                    </div>
-
-                </div>
             </div>
 
-        </div>
+       
 
     </div>
 
@@ -150,7 +152,7 @@
 
         <div class="container">
             <div class="history-holder">
-                <div class="history-info">
+                <div class="history-info wow fadeInLeft" data-wow-duration="2s">
 
                     <div class="history-title">
                         Наша История
@@ -175,9 +177,9 @@
 
                 <div class="history-images">
 
-                    <img class="images-1" src="1.jpg" alt="">
-                    <img class="images-2" src="2.jpg" alt="">
-                    <img class="images-3" src="3.jpg" alt="">
+                    <img class="images-1 wow fadeIn" data-wow-duration="2s" src="1.jpg" alt="">
+                    <img class="images-2 wow fadeIn" data-wow-duration="4s" src="2.jpg" alt="">
+                    <img class="images-3 wow fadeIn" data-wow-duration="6s" src="3.jpg" alt="">
 
                 </div>
 
@@ -188,31 +190,29 @@
     </div>
 
 
-    <div class="black-block">
+    <div class="holidays">
 
-        <div class="container">
-            <div class="block-holder">
+        <div class="holidays-block">
 
+
+            <div class="holidays-text">
                 <div class="left">
-
-                    <div class="left-title">Отпразднуйте в одном из <br> самых лучших ресторанов.</div>
-                    <div class="left-text">Только в этом месяце бизнес-ланч от 250 ₽
-
-                    </div>
-
+                    <p class="left-title">Отпразднуйте в одном из самых<br> 
+                        лучших ресторанов.</p>
+                    <p class="left-text">Только в этом месяце бизнес-ланч от 250 ₽</p>
                 </div>
-
-                <div class="right">
-
-                    <div class="right-button">
-                        <a href="#" class="right-btn">ЗАКАЗ СТОЛИКА</a>
-                    </div>
-
-                </div>
+                <a href="#" class="right-btn"> <button class="right-button">ЗАКАЗ СТОЛИКА</button></a>
             </div>
 
+
+
+
         </div>
+
     </div>
+
+
+
 
     <div class="dishes">
         <div class="container">
@@ -223,25 +223,25 @@
 
             <div class="food">
                 <div class="food-images">
-                    <img src="pizza2.png" class="pizza">
+                    <img src="pizza2.png " class="pizza wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="food-items">
                     <div class="food-item">
-                        <img src="pasta.jpg" class="foods">
+                        <img src="pasta.jpg" class="foods wow fadeIn" data-wow-duration="2s">
                         <div class="foods-text">
                             Паста ------------ 240 ₽
                         </div>
                     </div>
 
                     <div class="food-item">
-                        <img src="steyk.jpg" class="foods">
+                        <img src="steyk.jpg" class="foods wow fadeIn" data-wow-duration="2s">
                         <div class="foods-text">
                             Стейк ------------ 360 ₽
                         </div>
                     </div>
 
                     <div class="food-item">
-                        <img src="salad.jpg" class="foods">
+                        <img src="salad.jpg" class="foods wow fadeIn" data-wow-duration="2s">
                         <div class="foods-text">
                             Салат ------------ 180 ₽
                         </div>
@@ -259,7 +259,7 @@
             <div class="menu-title">
                 Наше меню
             </div>
-            <div class="menu-items">
+            <div class="menu-items wow fadeInLeft" data-wow-duration="2s">
                 <div class="menu-item">
                     <div class="menu-image">
                         <img src="burger.png" class="menu-img">
@@ -273,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item wow fadeInLeft" data-wow-duration="2s">
                     <div class="menu-image">
                         <img src="kokteil.png" class="menu-img">
 
@@ -287,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item wow fadeInLeft" data-wow-duration="2s">
                     <div class="menu-image">
                         <img src="grill.png" class="menu-img">
 
@@ -365,13 +365,13 @@
                 <div class="cook-title">Наши <span>Повара</span>
                 </div>
                 <div class="cook-content">
-                    <img src="1c.jpg">
-                    <img src="2c.jpg">
-                    <img src="3c.jpg">
+                    <img class="cooks" src="1c.jpg">
+                    <img class="cooks" src="2c.jpg">
+                    <img class="cooks" src="3c.jpg">
                 </div>
             </div>
         </div>
-
+    </div>
         <footer>
 
             <div class="footer">

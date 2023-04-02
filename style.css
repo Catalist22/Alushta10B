@@ -140,28 +140,65 @@
     
     .cards-holder {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        max-width: 1280px;
+        min-height: 100px;
+        margin: auto;
     }
     
     .card {
-        width: 349px;
-        box-shadow: 10px 10px 40px 20px #0000001A;
+        width: 300px;
         margin-right: 31px;
-        background-color: #fff;
         margin-top: -80px;
         padding: 10px 10px;
+        position: relative;
+        perspective: 30rem;
     }
+
+   .front{
+   
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;}
+
+   .back{
+    transform: rotateY(180deg);
+  
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .side{
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+   }
+
+   .card:hover .front {
+    transform: rotateY(-180deg); }
+  .card:hover .back {
+    transform: rotateY(0); }
     
-    .card-image {
-        display: flex;
-        justify-content: center;
-        padding-top: 31px;
-        margin-bottom: 20px;
+    .card-img {
+        width:100px;
+        margin: auto;
+    }
+
+    .line{
+       border:2px solid #cdac89;
+       width: 50%;
     }
     
     .card-title {
-        display: flex;
-        justify-content: center;
+        
+        text-align: center;
         font-family: 'Tinos', serif;
         font-size: 26px;
         font-weight: 400;
@@ -169,10 +206,13 @@
     
     .card-desc {
         text-align: center;
-        font-family: 'Tinos', serif;
-        font-size: 26px;
-        font-weight: 400;
-        color: #656363;
+        font-family: 'Caveat', cursive;
+        font-size: 24px;
+        font-weight: 500;
+        color: #303030;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .history {
@@ -196,6 +236,7 @@
         width: 444px;
         text-align: center;
         margin-left: 150px;
+        
     }
     
     .history-number {
@@ -216,6 +257,7 @@
     .number-item span {
         display: block;
         color: #000;
+        font-family: 'Caveat', cursive;
     }
     
     .history-images {
@@ -252,6 +294,35 @@
         box-shadow: 10px 10px 40px 20px #0000001A;
         margin-top: -70px;
     }
+
+
+    /* holidays */
+
+    .holidays{
+    
+        max-width:100%;
+        display: flex;
+    }
+
+    .holidays-block{
+       
+        width:90%;
+        min-height:500px;
+        margin: auto;
+        display: flex;
+        background-image: url(black-bg3.png);
+    }
+
+    .holidays-text{
+        width:70%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .left{
+        width:70%;
+    }
     
     .black-block {
         margin-left: 250px;
@@ -265,24 +336,42 @@
         font-family: 'Tinos', serif;
         font-size: 52px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin: 0;
     }
     
     .left-text {
         font-weight: 700;
         font-size: 24px;
         color: #fff;
+        margin: 0;
     }
-    
+
     .right-btn {
         background-color: #FF7400;
-        color: #fff;
         text-decoration: none;
-        padding: 14px 18px;
+        padding: 14px 14px;
         font-weight: 700;
         transition: background-color 0.2s linear;
-        margin-right: 300px;
+        cursor: pointer;
+        text-align: center;
+        align-self: center;
+        transition: 1s;
     }
+
+    .right-btn:hover{
+      
+        box-shadow: 1px 1px 15px 10px  rgba(255, 255, 255, 0.39);
+    }
+    
+.right-button{
+    color: #fff;
+    font-family: 'Tinos', serif;
+    font-weight: 900;
+    font-size: 16px;
+ 
+}
+
+
     
     .block-holder {
         display: flex;
@@ -315,9 +404,9 @@
     }
     
     .foods-text {
-        font-family: 'Tinos', serif;
+        font-family: 'Caveat', cursive;
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 700;
         margin-left: 20px;
     }
     
@@ -333,9 +422,10 @@
         font-family: 'Tinos', serif;
         font-size: 54px;
         padding-top: 98px;
-        color: rgba(199, 8, 40, 0.952);
+        color: #FF7400;
         text-align: center;
         padding-bottom: 138px;
+        text-transform: uppercase;
     }
     
     .menu-item {
@@ -489,6 +579,11 @@
     .cook {
         padding-bottom: 100px;
     }
+
+    .cooks{
+        width:100%;
+        margin-right: 50px;
+    }
     
     .footer {
         background-color: #000;
@@ -536,6 +631,26 @@
         .galery-left {
             margin-right: 0px;
         }
+        .holidays-text{
+            flex-direction: column;
+        }
+        .left{
+            width:100%;
+        }
+        .right-btn{
+            margin-top:50px;
+        }
+        .left-title {
+            font-size:24px;
+        }
+        
+        .left-text {  
+            font-size: 18px;        
+        }
+        .cooks{
+            width:80%;
+            margin-right: 50px;
+        }
     }
     
     @media (max-width: 1300px) {
@@ -565,16 +680,8 @@
         .block-holder {
             display: block;
         }
-        .left-title,
-        .left-text,
-        .right-button {
-            text-align: center;
-        }
-        .right-button {
-            margin-top: 30px;
-            margin-right: 0px;
-            margin-left: 300px;
-        }
+    
+     
         .history-images {
             display: none;
         }
@@ -582,7 +689,11 @@
         .history-desc,
         .history-number {
             width: auto;
+            flex-direction: column;
             margin-left: 10px;
+        }
+        .number-item {
+            margin-right: 0px;
         }
         .container {
             margin: auto 40px;
@@ -615,10 +726,15 @@
     
     @media (max-width: 1000px) {
         .cards-holder {
-            display: block;
+            /* display: block; */
+            flex-direction: column;
+            min-height: 657px;
+        
+            align-items: center;
+            justify-content: space-around;
         }
         .card {
-            width: 100%;
+            width: 250px;
             margin-top: 30px;
             padding-bottom: 20px;
         }
